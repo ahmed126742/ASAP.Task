@@ -1,0 +1,26 @@
+<form (ngSubmit)="onSubmit()" #userForm="ngForm" class="user-management-form">
+    <div class="k-form-field">
+        <label for="id">Id </label>
+        <input kendoTextBox type="text" id="id" required [(ngModel)]="user.id" name="id" placeholder="Ente user id ">
+    </div>
+    <div class="k-form-field">
+        <label for="firstName">First Name</label>
+        <input kendoTextBox type="text" id="firstName" required [(ngModel)]="user.firstName" name="firstName" placeholder="Enter first name">
+    </div>
+    <div class="k-form-field">
+        <label for="lastName">Last Name</label>
+        <input kendoTextBox type="text" id="lastName" required [(ngModel)]="user.lastName" name="lastName" placeholder="Enter last name">
+    </div>
+    <div class="k-form-field">
+        <label for="email">Email</label>
+        <input kendoTextBox type="email" id="email" required email [(ngModel)]="user.email" name="email" placeholder="Enter email">
+    </div>
+    <div class="k-form-field">
+        <label for="phoneNumber">Phone Number</label>
+        <input kendoTextBox type="text" id="phoneNumber" required [(ngModel)]="user.phoneNumber" name="phoneNumber" placeholder="Enter phone number">
+    </div>
+    <div class="button-group">
+        <button kendoButton type="reset" class="btn-clear">Clear</button>
+        <button kendoButton type="submit" class="btn-create">Update User</button>
+    </div>
+</form>
